@@ -10,7 +10,7 @@ InputManager:
     descriptiveName: Submit keyboard button for UI
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: space
+    positiveButton: return
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -156,10 +156,10 @@ InputManager:
     negativeButton: 
     positiveButton: enter
     altNegativeButton: 
-    altPositiveButton: return
-    gravity: 1000
+    altPositiveButton: 
+    gravity: 50
     dead: 0.001
-    sensitivity: 1000
+    sensitivity: 1
     snap: 0
     invert: 0
     type: 0

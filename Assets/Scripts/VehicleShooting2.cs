@@ -3,15 +3,15 @@ using System.Collections;
 
 public class VehicleShooting2 : MonoBehaviour
 {
-		public Rigidbody bulletPrefab;
-		public Transform Front;
-		public float fireRate = 15f;
+	public Rigidbody bulletPrefab;
+	public Transform Front;
+	public float fireRate = 15f;
 
-		private float nextTimeToFire = 2f;
+	private float nextTimeToFire = 2f;
 
-		void Update()
+	void Update()
 	{
-		if (Input.GetButton ("Fire2") && Time.time >= nextTimeToFire) 
+		if (Input.GetButton("Fire2") && Time.time >= nextTimeToFire) 
 		{
 			nextTimeToFire = Time.time + 20f / fireRate;
 			Rigidbody bulletInstance;

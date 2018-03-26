@@ -289,8 +289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlayerNumber: 1
-  m_Speed: 50
-  m_TurnSpeed: 150
+  m_Speed: 60
+  m_TurnSpeed: 180
   m_PitchRange: 0.2
 --- !u!114 &114825426981718516
 MonoBehaviour:

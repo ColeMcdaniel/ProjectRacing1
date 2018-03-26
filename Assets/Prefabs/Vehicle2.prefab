@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 135745139656513826}
   - component: {fileID: 23152079889872822}
   - component: {fileID: 199106713571683466}
+  - component: {fileID: 114507264207213470}
   - component: {fileID: 198704695101003518}
-  - component: {fileID: 114922696402231882}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -277,22 +277,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.21332, y: 1.7, z: 4.175933}
   m_Center: {x: 0.13225822, y: 0.85, z: -0.005031196}
---- !u!114 &114734759802463110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1594439327167598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92fc450170a7dd34d829bb200ba56bf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayerNumber: 2
-  m_Speed: 50
-  m_TurnSpeed: 180
-  m_PitchRange: 0.2
---- !u!114 &114922696402231882
+--- !u!114 &114507264207213470
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -307,6 +292,21 @@ MonoBehaviour:
     type: 2}
   Front: {fileID: 4355574038556242}
   fireRate: 15
+--- !u!114 &114734759802463110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594439327167598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fc450170a7dd34d829bb200ba56bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerNumber: 2
+  m_Speed: 60
+  m_TurnSpeed: 180
+  m_PitchRange: 0.2
 --- !u!135 &135745139656513826
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -379,7 +379,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 655885429
+  randomSeed: 1125748203
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3740,7 +3740,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1783669619
+  randomSeed: -316188171
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3920,7 +3920,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -3961,7 +3961,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:

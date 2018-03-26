@@ -4,10 +4,7 @@ public class VehicleMovement2 : MonoBehaviour
 {
 	public int m_PlayerNumber = 2;         
 	public float m_Speed = 12f;            
-	public float m_TurnSpeed = 180f;       
-	//	public AudioSource m_MovementAudio;    
-	//	public AudioClip m_EngineIdling;       
-	//	public AudioClip m_EngineDriving;      
+	public float m_TurnSpeed = 180f;            
 	public float m_PitchRange = 0.2f;
 
 
@@ -43,8 +40,6 @@ public class VehicleMovement2 : MonoBehaviour
 	{
 		m_MovementAxisName = "Vertical" + m_PlayerNumber;
 		m_TurnAxisName = "Horizontal" + m_PlayerNumber;
-
-		//		m_OriginalPitch = m_MovementAudio.pitch;
 	}
 
 	private void Update()
@@ -52,40 +47,11 @@ public class VehicleMovement2 : MonoBehaviour
 		// Store the player's input and make sure the audio for the engine is playing.
 		m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
 		m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
-
-		//		EngineAudio ();
 	}
-
-
-	//	private void EngineAudio()
-	//	{
-	//		// Play the correct audio clip based on whether or not the vehicle is moving and what audio is currently playing.
-	//
-	//		if (Mathf.Abs (m_MovementInputValue) < 0.1f && Mathf.Abs (m_TurnInputValue) < 0.1f)
-	//		{
-	//			if (m_MovementAudio.clip == m_EngineDriving)
-	//			{
-	//				m_MovementAudio.clip = m_EngineIdling;
-	//				m_MovementAudio.pitch = Random.Range (m_OriginalPitch - m_PitchRange, m_OriginalPitch + m_PitchRange);
-	//				m_MovementAudio.Play ();
-	//			}
-	//		}
-	//		else
-	//		{
-	//			if (m_MovementAudio.clip == m_EngineIdling)
-	//			{
-	//				m_MovementAudio.clip = m_EngineDriving;
-	//				m_MovementAudio.pitch = Random.Range (m_OriginalPitch - m_PitchRange, m_OriginalPitch + m_PitchRange);
-	//				m_MovementAudio.Play ();
-	//			}		
-	//		}
-	//
-	//	}
 
 
 	private void FixedUpdate()
 	{
-		// Move and turn the tank.
 		Move ();
 		Turn ();
 	}
